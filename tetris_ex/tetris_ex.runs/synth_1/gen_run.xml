@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1555609140">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556040280">
   <File Type="PA-TCL" Name="TETRIS.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="TETRIS_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TETRIS_reports.tcl"/>

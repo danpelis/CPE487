@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11648 
+INFO: Helper process launched with PID 8920 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 408.723 ; gain = 96.398
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 409.070 ; gain = 96.430
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'TETRIS' [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd:20]
 INFO: [Synth 8-3491] module 'CLOCK_GENERATOR' declared at 'C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/clock_generator.vhd:4' bound to instance 'U1' of component 'CLOCK_GENERATOR' [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd:177]
@@ -43,7 +43,7 @@ INFO: [Synth 8-256] done synthesizing module 'TETRIS' (7#1) [C:/Users/dppel/Proj
 WARNING: [Synth 8-3331] design TETRIS has unconnected port ps2_clk
 WARNING: [Synth 8-3331] design TETRIS has unconnected port ps2_data
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 664.660 ; gain = 352.336
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 664.652 ; gain = 352.012
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -63,10 +63,10 @@ WARNING: [Synth 8-3295] tying undriven pin U6:start to constant 0 [C:/Users/dppe
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 664.660 ; gain = 352.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 664.652 ; gain = 352.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 664.660 ; gain = 352.336
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 664.652 ; gain = 352.012
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -74,6 +74,18 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc]
+WARNING: [Vivado 12-584] No ports matched 'key_enter'. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_left'. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_right'. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_down'. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TETRIS_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TETRIS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -82,22 +94,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 977.598 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 976.539 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 977.598 ; gain = 665.273
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 976.539 ; gain = 663.898
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 977.598 ; gain = 665.273
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 976.539 ; gain = 663.898
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 977.598 ; gain = 665.273
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 976.539 ; gain = 663.898
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "out_signal" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "ten_signal" won't be mapped to RAM because it is too sparse
@@ -105,7 +117,7 @@ INFO: [Synth 8-5544] ROM "tetrimino[tiles][1][y]" won't be mapped to Block RAM b
 INFO: [Synth 8-5544] ROM "rotate_function[tiles][1][x]1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "tetrimino[tiles][1][y]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "rotate_function[tiles][1][x]1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd:126]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd:125]
 INFO: [Synth 8-5546] ROM "fall_signal" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "move_signal" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "stage_register" won't be mapped to RAM because it is too sparse
@@ -118,7 +130,7 @@ INFO: [Synth 8-5545] ROM "tetrimino[tiles][2][y]" won't be mapped to RAM because
 INFO: [Synth 8-5545] ROM "tetrimino[tiles][3][x]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "tetrimino[tiles][3][y]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 977.598 ; gain = 665.273
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 976.539 ; gain = 663.898
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -332,7 +344,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-6014] Unused sequential element U5/play_music_reg was removed.  [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd:187]
+WARNING: [Synth 8-6014] Unused sequential element U5/play_music_reg was removed.  [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd:186]
 INFO: [Synth 8-5546] ROM "U1/ten_signal" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design TETRIS has unconnected port ps2_clk
 WARNING: [Synth 8-3331] design TETRIS has unconnected port ps2_data
@@ -590,7 +602,7 @@ WARNING: [Synth 8-3332] Sequential element (board_data_reg[4,1][state]) is unuse
 WARNING: [Synth 8-3332] Sequential element (board_data_reg[4,2][state]) is unused and will be removed from module TETRIS_DATA.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:45 ; elapsed = 00:03:04 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:21 ; elapsed = 00:02:38 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -603,13 +615,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:57 ; elapsed = 00:03:18 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:31 ; elapsed = 00:02:50 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:57 ; elapsed = 00:03:18 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Timing Optimization : Time (s): cpu = 00:02:31 ; elapsed = 00:02:50 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -622,7 +634,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:57 ; elapsed = 00:03:18 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Technology Mapping : Time (s): cpu = 00:02:32 ; elapsed = 00:02:50 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -646,7 +658,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished IO Insertion : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -659,7 +671,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -671,25 +683,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -727,11 +739,11 @@ Report Instance Areas:
 |3     |  U2     |VGA_CONTROLLER  |   109|
 +------+---------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 863 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:23 ; elapsed = 00:03:04 . Memory (MB): peak = 1012.777 ; gain = 387.516
-Synthesis Optimization Complete : Time (s): cpu = 00:02:59 ; elapsed = 00:03:19 . Memory (MB): peak = 1012.777 ; gain = 700.453
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:02 ; elapsed = 00:02:38 . Memory (MB): peak = 1013.457 ; gain = 388.930
+Synthesis Optimization Complete : Time (s): cpu = 00:02:33 ; elapsed = 00:02:51 . Memory (MB): peak = 1013.457 ; gain = 700.816
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -741,11 +753,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-204 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+204 Infos, 118 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:01 ; elapsed = 00:03:22 . Memory (MB): peak = 1012.777 ; gain = 713.090
+synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:02:54 . Memory (MB): peak = 1013.457 ; gain = 713.691
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/TETRIS.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TETRIS_utilization_synth.rpt -pb TETRIS_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1012.777 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 13:42:39 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1013.457 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 13:27:44 2019...

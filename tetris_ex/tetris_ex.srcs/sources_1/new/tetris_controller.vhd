@@ -79,8 +79,7 @@ begin
  key_down_old <= '0';
  key_space_old <= '0';
 
--- elsif clock'event and clock = '1' then
-elsif rising_edge(clock) then
+elsif clock'event and clock = '1' then
  key_left_old <= key_left;
  key_right_old <= key_right;
  key_up_old <= key_up;
