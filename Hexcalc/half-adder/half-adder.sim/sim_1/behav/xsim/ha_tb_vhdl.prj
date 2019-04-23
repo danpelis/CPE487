@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../half-adder.srcs/sources_1/new/ha.vhd" \
+"../../../../half-adder.srcs/sim_1/new/ha_tb.vhd" \
+
+# Do not sort compile order
+nosort

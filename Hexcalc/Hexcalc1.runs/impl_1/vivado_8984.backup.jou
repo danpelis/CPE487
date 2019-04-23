@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 28 13:14:46 2019
+# Process ID: 8984
+# Current directory: C:/Users/dppel/Projects/CPE 487/Hexcalc/Hexcalc1.runs/impl_1
+# Command line: vivado.exe -log hexcalc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hexcalc.tcl -notrace
+# Log file: C:/Users/dppel/Projects/CPE 487/Hexcalc/Hexcalc1.runs/impl_1/hexcalc.vdi
+# Journal file: C:/Users/dppel/Projects/CPE 487/Hexcalc/Hexcalc1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source hexcalc.tcl -notrace

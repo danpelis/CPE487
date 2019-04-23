@@ -1,0 +1,4 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Error: Reached end of test
+Time: 5 ns  Iteration: 0  Process: /ha_tb/line__25  File: C:/Users/dppel/Projects/CPE 487/Hexcalc/half-adder/half-adder.srcs/sim_1/new/ha_tb.vhd
