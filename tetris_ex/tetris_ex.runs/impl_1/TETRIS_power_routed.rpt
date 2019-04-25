@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Tue Apr 23 13:30:24 2019
+| Date             : Thu Apr 25 13:50:33 2019
 | Host             : DESKTOP-6J2BPD3 running 64-bit major release  (build 9200)
 | Command          : report_power -file TETRIS_power_routed.rpt -pb TETRIS_power_summary_routed.pb -rpx TETRIS_power_routed.rpx
 | Design           : TETRIS
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.098        |
+| Total On-Chip Power (W)  | 0.130        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.001        |
+| Dynamic (W)              | 0.033        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,14 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      118 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       69 |     63400 |            0.11 |
-|   Register     |    <0.001 |       24 |    126800 |            0.02 |
-|   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |    <0.001 |       93 |       --- |             --- |
-| I/O            |    <0.001 |       16 |       210 |            7.62 |
+| Slice Logic    |     0.017 |     7780 |       --- |             --- |
+|   LUT as Logic |     0.016 |     5345 |     63400 |            8.43 |
+|   CARRY4       |    <0.001 |      206 |     15850 |            1.30 |
+|   F7/F8 Muxes  |    <0.001 |      327 |     63400 |            0.52 |
+|   Register     |    <0.001 |     1080 |    126800 |            0.85 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       13 |       --- |             --- |
+| Signals        |     0.015 |     5972 |       --- |             --- |
+| I/O            |    <0.001 |       18 |       210 |            8.57 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.098 |          |           |                 |
+| Total          |     0.130 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.001 |      0.015 |
+| Vccint    |       1.000 |     0.047 |       0.032 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -139,9 +142,14 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| TETRIS |     0.001 |
+| TETRIS |     0.033 |
 |   U1   |    <0.001 |
-|   U2   |    <0.001 |
+|   U2   |     0.001 |
+|   U4   |     0.011 |
+|   U5   |     0.007 |
+|   U6   |     0.001 |
+|   U7   |    <0.001 |
+|   U8   |    <0.001 |
 +--------+-----------+
 
 

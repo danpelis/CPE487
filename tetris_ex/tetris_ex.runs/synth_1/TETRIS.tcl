@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,14 +31,16 @@ set_property ip_output_repo {c:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/clock_generator.vhd}
-  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd}
-  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd}
-  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd}
-  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd}
-  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd}
-  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/imports/new/image_package.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/imports/new/tetris_package.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/imports/new/image_source.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_controller.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_source.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/imports/new/rand_num_gen.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/imports/new/tetris_controller.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/imports/new/tetris_data.vhd}
   {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/vga_controller.vhd}
-  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd}
+  {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/imports/new/tetris.vhd}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

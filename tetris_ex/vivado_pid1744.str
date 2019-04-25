@@ -393,3 +393,1102 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tetris_
 selectCodeEditor("tetris_controller.vhd", 288, 263); // ce (w, ck)
 // Elapsed time: 364 seconds
 selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B0DFA 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 53 MB. Current time: 4/23/19 4:45:58 PM EDT
+// Elapsed time: 12848 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 53 MB. Current time: 4/23/19 5:15:59 PM EDT
+// [GUI Memory]: 103 MB (+433kb) [04:30:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 52 MB. Current time: 4/23/19 5:46:00 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 53 MB. Current time: 4/23/19 9:00:34 PM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10739229 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2765 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 109 MB (+673kb) [08:13:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 53 MB. Current time: 4/25/19 11:01:48 AM EDT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1585 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1141 ms to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 53 MB. Current time: 4/25/19 11:31:48 AM EDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 370030 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 369978 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 53 MB. Current time: 4/25/19 12:01:49 PM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 427165 ms. Increasing delay to 5000 ms.
+// Elapsed time: 155381 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// aj (ck): Save Project: addNotify
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Save Project"); // aj (ck)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0]' 
+typeControlKey(null, null, 'z');
+selectCodeEditor("tetris_controller.vhd", 232, 303); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 12:25:19 2019] Launched synth_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 182 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 12:28:24 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 99 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Apr 25 12:30:06 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 64 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 55 MB. Current time: 4/25/19 12:31:53 PM EDT
+// Elapsed time: 77 seconds
+selectCodeEditor("tetris_controller.vhd", 71, 179); // ce (w, ck)
+typeControlKey((HResource) null, "tetris_controller.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("tetris_controller.vhd", 441, 208); // ce (w, ck)
+selectCodeEditor("tetris_controller.vhd", 441, 208, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+// Elapsed time: 191 seconds
+selectCodeEditor("tetris_controller.vhd", 8, 212); // ce (w, ck)
+// Elapsed time: 66 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "enter"); // l (aQ, ck)
+selectCodeEditor("tetris_controller.vhd", 222, 140); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("tetris_controller.vhd", 0, 106); // ce (w, ck)
+selectCodeEditor("tetris_controller.vhd", 115, 113); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("tetris.xdc", 253, 484); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 734, 493); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 499, 574); // ce (w, aG)
+// Elapsed time: 48 seconds
+selectCodeEditor("tetris.xdc", 798, 453); // ce (w, aG)
+// Elapsed time: 19 seconds
+selectCodeEditor("tetris.xdc", 118, 211); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 409, 472); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 712, 542); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 798, 362); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 644, 548); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 798, 453); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 619, 397); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 619, 397); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 640, 417); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 610, 402); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 834, 450); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 834, 450); // ce (w, aG)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B0DFA 
+// n (aG): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (aG)
+// Elapsed time: 137 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// Elapsed time: 84 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd)]", 1); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+// Elapsed time: 11 seconds
+String[] filenames31467 = {"C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd", "C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd", "C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd", "C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd", "C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd", "C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd"};
+setFileChooser(filenames31467);
+// Elapsed time: 18 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+// [GUI Memory]: 116 MB (+1546kb) [47:41:36]
+String[] filenames16706 = {"C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd", "C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd"};
+setFileChooser(filenames16706);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 48 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd)]", 8, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAND_NUM_GEN(BEHV) (rand_num_gen.vhd)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAND_NUM_GEN(BEHV) (rand_num_gen.vhd)]", 9, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS_DATA(BEHV) (tetris_data.vhd)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IMAGE_SOURCE(BEHV) (image_source.vhd)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 9, false, true, false, false, false, false); // B (D, ck) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS_DATA(BEHV) (tetris_data.vhd)]", 10, false, true, false, false, false, false); // B (D, ck) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS_DATA(BEHV) (tetris_data.vhd)]", 10, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd}}] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd}}] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd} {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd} {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 12); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd)]", 13); // B (D, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ad (aj, c)
+// F (c): Create Source File: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories..."); // ad (aj, c)
+dismissFolderChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+String[] filenames29306 = {"C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd", "C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd"};
+setFileChooser(filenames29306);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // c (ck)
+// c (ck): Add Sources: addNotify
+// bU (c): Import Source Conflicts: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bU)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Import Source Conflicts"); // bU (c)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -force -norecurse {C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd), U5 : TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd), U5 : TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd), U5 : TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 6, false); // B (D, ck)
+selectCodeEditor("tetris_controller.vhd", 124, 198); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("tetris_controller.vhd", 4, 197); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr 25 12:46:14 2019] Launched synth_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("tetris_controller.vhd", 5, 254); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr 25 12:46:26 2019] Launched synth_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// [GUI Memory]: 123 MB (+1228kb) [47:44:01]
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 230 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 12:50:18 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 128 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Apr 25 12:52:35 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+// Elapsed time: 67 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+// TclEventType: RUN_COMPLETED
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+setFileChooser("C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (ck)
+// ah (ck): Bitstream Generation Completed: addNotify
+// c (ck): Add Sources: addNotify
+// bU (c): Import Source Conflicts: addNotify
+// [GUI Memory]: 133 MB (+4351kb) [47:51:35]
+selectButton(PAResourceQtoS.SrcConflictDialog_VIEW_CONFLICTS, "View Conflicts..."); // a (C, bU)
+// bW (bU): Import Conflicts: addNotify
+selectButton(PAResourceQtoS.SrcConflictDialog_OK, "OK"); // a (bW)
+dismissDialog("Import Conflicts"); // bW (bU)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bU)
+dismissDialog("Import Source Conflicts"); // bU (c)
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd), U6 : RAND_NUM_GEN(BEHV) (rand_num_gen.vhd)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd), U6 : RAND_NUM_GEN(BEHV) (rand_num_gen.vhd)]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd), U6 : RAND_NUM_GEN(BEHV) (rand_num_gen.vhd)]", 7, false); // B (D, ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TETRIS(BEHV) (tetris.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U5 : TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U5 : TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("tetris_controller.vhd", 129, 56); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U4 : TETRIS_DATA(BEHV) (tetris_data.vhd)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U4 : TETRIS_DATA(BEHV) (tetris_data.vhd)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("tetris_data.vhd", 40, 40); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i (N, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 7, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, image_package.vhd]", 5, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris_package.vhd]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 89 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("tetris_package.vhd", 145, 704); // ce (w, ck)
+typeControlKey((HResource) null, "tetris_package.vhd", 'v'); // ce (w, ck)
+// [GUI Memory]: 149 MB (+9199kb) [47:56:30]
+selectCodeEditor("tetris_package.vhd", 128, 299); // ce (w, ck)
+selectCodeEditor("tetris_package.vhd", 122, 556); // ce (w, ck)
+selectCodeEditor("tetris_package.vhd", 138, 227); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("tetris_package.vhd", 2, 466); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("tetris_package.vhd", 209, 489); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("tetris_package.vhd", 2, 15); // ce (w, ck)
+selectCodeEditor("tetris_package.vhd", 264, 364); // ce (w, ck)
+typeControlKey((HResource) null, "tetris_package.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("tetris_package.vhd", 126, 395); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("tetris_package.vhd", 122, 502); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("tetris_package.vhd", 0, 231); // ce (w, ck)
+typeControlKey((HResource) null, "tetris_package.vhd", 'v'); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 62 MB. Current time: 4/25/19 1:01:53 PM EDT
+selectCodeEditor("tetris_package.vhd", 190, 344); // ce (w, ck)
+typeControlKey((HResource) null, "tetris_package.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 52 seconds
+selectCodeEditor("tetris_package.vhd", 335, 93); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 31 seconds
+selectCodeEditor("tetris_package.vhd", 127, 402); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("tetris_package.vhd", 89, 703); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tetris_data.vhd", 3); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tetris.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rand_num_gen.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tetris_controller.vhd", 0); // k (j, ck)
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // aw
+unMinimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // aw
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris.vhd]", 11, false); // B (D, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("tetris.vhd", 37, 610); // ce (w, ck)
+// Elapsed time: 101 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rand_num_gen.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tetris_controller.vhd", 0); // k (j, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("tetris_controller.vhd", 99, 503); // ce (w, ck)
+typeControlKey((HResource) null, "tetris_controller.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("tetris_controller.vhd", 105, 562); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("tetris_controller.vhd", 24, 509); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_GENERATED
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 13:06:55 2019] Launched synth_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 184 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 13:10:02 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 115 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Apr 25 13:12:00 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 70 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 44 seconds
+applyEnter(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // u (O, ck)
+// Elapsed time: 23 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 164 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // aw
+unMinimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // aw
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ad (aj, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cl (Q, F)
+// Elapsed time: 19 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "keyboard_controller"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ad (aj, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cl (Q, F)
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "keyboard_source"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 61 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_controller.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_controller.vhd}} 
+// Tcl Message: close [ open {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_source.vhd} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_source.vhd}} 
+// I (ck): Define Modules: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Modules"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, keyboard_controller(Behavioral) (keyboard_controller.vhd)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, keyboard_controller(Behavioral) (keyboard_controller.vhd)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("keyboard_controller.vhd", 67, 685); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 156, 136); // ce (w, ck)
+typeControlKey((HResource) null, "keyboard_controller.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 65, 163); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 65, 163, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("keyboard_controller.vhd", 7, 384); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 125, 351); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("keyboard_controller.vhd", 132, 481); // ce (w, ck)
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd)]", 10); // B (D, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("keyboard_controller.vhd", 154, 703); // ce (w, ck)
+typeControlKey((HResource) null, "keyboard_controller.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 119, 235); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("keyboard_controller.vhd", 3, 348); // ce (w, ck)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("keyboard_controller.vhd", 135, 244); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("keyboard_controller.vhd", 11, 364); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 108, 524); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 612, 343); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("keyboard_controller.vhd", 0, 373); // ce (w, ck)
+selectCodeEditor("keyboard_controller.vhd", 136, 261); // ce (w, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i (N, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 12); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, keyboard_source.vhd]", 14, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, keyboard_source.vhd]", 14, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("keyboard_source.vhd", 22, 114); // ce (w, ck)
+typeControlKey((HResource) null, "keyboard_source.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("keyboard_source.vhd", 132, 349); // ce (w, ck)
+selectCodeEditor("keyboard_source.vhd", 143, 234); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard_controller.vhd", 1); // k (j, ck)
+// Elapsed time: 136 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "tetris.xdc"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "tetris.xdc"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard_controller.vhd", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tetris_package.vhd", 0); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris.vhd]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris.vhd]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tetris.vhd]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("tetris.vhd", 19, 422); // ce (w, ck)
+typeControlKey((HResource) null, "tetris.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("tetris.vhd", 117, 540); // ce (w, ck)
+// Elapsed time: 88 seconds
+selectCodeEditor("tetris.vhd", 11, 538); // ce (w, ck)
+selectCodeEditor("tetris.vhd", 7, 671); // ce (w, ck)
+typeControlKey((HResource) null, "tetris.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("tetris.vhd", 131, 552); // ce (w, ck)
+selectCodeEditor("tetris.vhd", 106, 666); // ce (w, ck)
+// Elapsed time: 75 seconds
+selectCodeEditor("tetris.vhd", 511, 288); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 13:29:17 2019] Launched synth_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 63 MB. Current time: 4/25/19 1:31:53 PM EDT
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 173 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'c' command handler elapsed time: 11 seconds
+dismissDialog("Launch Runs"); // f (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/constrs_1/new/tetris.xdc:25]. ]", 4, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\dppel\Projects\CPE 487\tetris_ex\tetris_ex.srcs\constrs_1\new\tetris.xdc;-;;-;16;-;line;-;25;-;;-;16;-;"); // ah (O, ck)
+floatView(PAResourceOtoP.PAViews_CODE, "tetris.xdc"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectCodeEditor("tetris.xdc", 11, 422); // ce (w, aG)
+// Elapsed time: 74 seconds
+selectCodeEditor("tetris.xdc", 252, 421); // ce (w, aG)
+// Elapsed time: 191 seconds
+selectCodeEditor("tetris.xdc", 731, 462); // ce (w, aG)
+typeControlKey((HResource) null, "tetris.xdc", 'v'); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 0, 400); // ce (w, aG)
+// Elapsed time: 59 seconds
+selectCodeEditor("tetris.vhd", 59, 242); // ce (w, ck)
+typeControlKey((HResource) null, "tetris.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("tetris.xdc", 568, 505); // ce (w, aG)
+typeControlKey((HResource) null, "tetris.xdc", 'v'); // ce (w, aG)
+selectCodeEditor("tetris.vhd", 59, 263); // ce (w, ck)
+selectCodeEditor("tetris.vhd", 61, 266); // ce (w, ck)
+typeControlKey((HResource) null, "tetris.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("tetris.xdc", 569, 521); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 572, 521); // ce (w, aG)
+typeControlKey((HResource) null, "tetris.xdc", 'v'); // ce (w, aG)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 13:38:30 2019] Launched synth_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard_source.vhd", 2); // k (j, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U1 : CLOCK_GENERATOR(BEHV) (clock_generator.vhd)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U2 : VGA_CONTROLLER(BEHV) (vga_controller.vhd)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U6 : RAND_NUM_GEN(BEHV) (rand_num_gen.vhd)]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U5 : TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TETRIS(BEHV) (tetris.vhd), U5 : TETRIS_CONTROLLER(BEHV) (tetris_controller.vhd)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 151 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 13:41:18 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B0DFA. ]", 2); // ah (O, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 128 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 14 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Apr 25 13:43:52 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Bitstream Generation Failed: addNotify
+// Elapsed time: 71 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (ck)
+selectCodeEditor("tetris.xdc", 9, 395); // ce (w, aG)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 13:45:21 2019] Launched synth_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectCodeEditor("tetris.xdc", 628, 404); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 611, 502); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 621, 518); // ce (w, aG)
+// Elapsed time: 10 seconds
+selectCodeEditor("tetris.xdc", 665, 511); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 665, 501); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 770, 560); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 806, 352); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 599, 342); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 597, 333); // ce (w, aG)
+// Elapsed time: 19 seconds
+selectCodeEditor("tetris.xdc", 571, 263); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 571, 246); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 825, 255); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 803, 236); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 795, 248); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 581, 228); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 588, 160); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 583, 157); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 595, 138); // ce (w, aG)
+// Elapsed time: 11 seconds
+selectCodeEditor("tetris.xdc", 628, 226); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 584, 108); // ce (w, aG)
+// Elapsed time: 12 seconds
+selectCodeEditor("tetris.xdc", 584, 78); // ce (w, aG)
+// Elapsed time: 11 seconds
+selectCodeEditor("tetris.xdc", 620, 132); // ce (w, aG)
+// Elapsed time: 19 seconds
+selectCodeEditor("tetris.xdc", 579, 140); // ce (w, aG)
+// Elapsed time: 22 seconds
+selectCodeEditor("tetris.xdc", 579, 141); // ce (w, aG)
+// TclEventType: RUN_COMPLETED
+// ah (aG): Synthesis Completed: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// aj (aG): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a (aj)
+// f (aG): Launch Runs: addNotify
+dismissDialog("Save Project"); // aj (aG)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (aG):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (aG)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Apr 25 13:48:16 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (aG)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (aG): Implementation Completed: addNotify
+// Elapsed time: 146 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (aG): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a (aj)
+// f (aG): Launch Runs: addNotify
+dismissDialog("Save Project"); // aj (aG)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (aG)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Apr 25 13:50:48 2019] Launched impl_1... Run output will be captured here: C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (aG): Bitstream Generation Completed: addNotify
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (aG)
+selectCodeEditor("tetris.xdc", 704, 479); // ce (w, aG)
+selectCodeEditor("tetris.xdc", 559, 410); // ce (w, aG)
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bB)
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (aG)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (aG)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (ck)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 987 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 616 ms to process. Increasing delay to 2000 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B0DFA 
+// n (aG): Close Hardware Target: addNotify
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1240 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1240 ms to process. Increasing delay to 3000 ms.
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 86 MB. Current time: 4/25/19 2:49:33 PM EDT
+// Elapsed time: 3427 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (aG)
+// k (ck): Text Changed: addNotify
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "tetris.xdc*"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "tetris.xdc*"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Text Changed"); // k (ck)

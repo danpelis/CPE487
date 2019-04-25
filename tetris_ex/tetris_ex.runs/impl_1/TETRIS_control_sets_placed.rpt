@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Apr 23 13:29:07 2019
+| Date         : Thu Apr 25 13:49:31 2019
 | Host         : DESKTOP-6J2BPD3 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TETRIS_control_sets_placed.rpt
 | Design       : TETRIS
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    16 |
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |    64 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,8 +35,10 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      2 |            1 |
-|      6 |            1 |
-|    16+ |            2 |
+|      8 |            2 |
+|     10 |            2 |
+|     12 |            3 |
+|    16+ |           34 |
 +--------+--------------+
 
 
@@ -47,10 +49,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               2 |            1 |
-| No           | No                    | Yes                    |              26 |            5 |
+| No           | No                    | Yes                    |             200 |           38 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              20 |            4 |
+| Yes          | No                    | Yes                    |            1958 |          542 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -58,13 +60,51 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------+---------------+------------------+------------------+----------------+
-|   Clock Signal   | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+------------------+---------------+------------------+------------------+----------------+
-|  U1/CLK          |               |                  |                1 |              2 |
-|  clock_IBUF_BUFG |               | clear_IBUF       |                1 |              6 |
-|  U1/CLK          |               | clear_IBUF       |                4 |             20 |
-|  U1/CLK          | U2/v_enable   | clear_IBUF       |                4 |             20 |
-+------------------+---------------+------------------+------------------+----------------+
++------------------+--------------------------------------------+------------------+------------------+----------------+
+|   Clock Signal   |                Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------+--------------------------------------------+------------------+------------------+----------------+
+|  clock_out_BUFG  |                                            |                  |                1 |              2 |
+|  clock_out_BUFG  | U7/bit_counter[3]_i_1_n_0                  | clear_IBUF       |                2 |              8 |
+|  clock_out_BUFG  | U4/line_complete_combo_reg[2][0]           | U8/AR[0]         |                2 |              8 |
+|  clock_out_BUFG  | U5/move_counter[4]_i_1_n_0                 | U8/AR[0]         |                2 |             10 |
+|  clock_out_BUFG  | U4/E[0]                                    | U8/AR[0]         |                4 |             10 |
+|  clock_out_BUFG  | U5/tetrimino_data_reg[shape][2]            | U8/AR[0]         |                3 |             12 |
+|  clock_out_BUFG  | U5/fall_counter[5]_i_1_n_0                 | U8/AR[0]         |                3 |             12 |
+|  clock_out_BUFG  | U8/fall_delay_reg[5][0]                    | U8/AR[0]         |                2 |             12 |
+|  clock_out_BUFG  | U7/key_event_i_1_n_0                       | clear_IBUF       |                1 |             16 |
+|  clock_out_BUFG  | U7/ps2_word_reg                            | clear_IBUF       |                3 |             18 |
+|  clock_out_BUFG  | U2/v_enable                                | clear_IBUF       |                3 |             20 |
+|  clock_out_BUFG  | U4/board_data[9,0][state]                  | U8/AR[0]         |                5 |             20 |
+|  clock_out_BUFG  | U5/tetrimino_hold[shape]                   | U8/AR[0]         |                5 |             22 |
+|  clock_out_BUFG  | U4/tetrimino_next[tiles][3][y]             | U8/AR[0]         |                7 |             22 |
+|  clock_out_BUFG  | U6/shift_register[11]_i_1_n_0              | clear_IBUF       |                2 |             24 |
+|  clock_out_BUFG  | U7/E[0]                                    | clear_IBUF       |                4 |             32 |
+|  clock_out_BUFG  | U5/tetrimino_data_reg[tiles][3][x][3]_0[0] | U8/AR[0]         |                7 |             32 |
+|  clock_out_BUFG  | U4/score_register                          | U8/AR[0]         |                5 |             40 |
+|  clock_out_BUFG  |                                            | U8/AR[0]         |               12 |             46 |
+|  clock_IBUF_BUFG |                                            | clear_IBUF       |                7 |             48 |
+|  clock_out_BUFG  | U5/wire_10                                 | U8/AR[0]         |               19 |             60 |
+|  clock_out_BUFG  | U5/tetrimino_data[tiles][3][y]             | U8/AR[0]         |               12 |             60 |
+|  clock_out_BUFG  | U4/board_data[9,13][state]                 | U8/AR[0]         |               20 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,17][state]                 | U8/AR[0]         |               24 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,18][state]                 | U8/AR[0]         |               27 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,16][state]                 | U8/AR[0]         |               24 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,15][state]                 | U8/AR[0]         |               25 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,19][state]                 | U8/AR[0]         |               29 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,1][state]                  | U8/AR[0]         |               18 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,3][state]                  | U8/AR[0]         |               26 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,5][state]                  | U8/AR[0]         |               22 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,2][state]                  | U8/AR[0]         |               19 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,6][state]                  | U8/AR[0]         |               25 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,8][state]                  | U8/AR[0]         |               24 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,9][state]                  | U8/AR[0]         |               22 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,4][state]                  | U8/AR[0]         |               26 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,10][state]                 | U8/AR[0]         |               20 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,11][state]                 | U8/AR[0]         |               26 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,14][state]                 | U8/AR[0]         |               22 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,12][state]                 | U8/AR[0]         |               25 |             80 |
+|  clock_out_BUFG  | U4/board_data[9,7][state]                  | U8/AR[0]         |               27 |             80 |
+|  clock_out_BUFG  |                                            | clear_IBUF       |               19 |            106 |
++------------------+--------------------------------------------+------------------+------------------+----------------+
 
 
