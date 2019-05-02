@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 23 13:02:18 2019
+# Process ID: 1744
+# Current directory: C:/Users/dppel/Projects/CPE 487/tetris_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6824 C:\Users\dppel\Projects\CPE 487\tetris_ex\tetris_ex.xpr
+# Log file: C:/Users/dppel/Projects/CPE 487/tetris_ex/vivado.log
+# Journal file: C:/Users/dppel/Projects/CPE 487/tetris_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+undo
+undo
+undo
+undo
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+import_files -norecurse {C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/rand_num_gen.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_source.vhd} {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_controller.vhd} {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_data.vhd}}
+import_files -force -norecurse {C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd C:/Users/dppel/Projects/CPE487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/tetris_package.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/image_package.vhd}}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close [ open {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_controller.vhd} w ]
+add_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_controller.vhd}}
+close [ open {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_source.vhd} w ]
+add_files {{C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.srcs/sources_1/new/keyboard_source.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dppel/Projects/CPE 487/tetris_ex/tetris_ex.runs/impl_1/TETRIS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
